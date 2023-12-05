@@ -1,0 +1,352 @@
+from abc import ABC, abstractmethod
+
+# Classe abstrata para representar mensagens
+class Mensagem(ABC):
+    
+   
+def _init_(self, mensagem, arquivo, formato):
+        self.mensagem = mensagem
+        self.arquivo = arquivo
+        self.formato = formato
+
+
+        self.mensagem = mensagem
+        self.arquivo = arquivo
+        self.formato = formato
+
+        self.mensagem = mensagem
+        self.arquivo = arquivo
+        self.formato =
+
+        self.mensagem = mensagem
+        self.arquivo = arquivo
+        self.
+
+        self.mensagem = mensagem
+        self.arquivo = arquivo
+    
+
+        self.mensagem = mensagem
+        self.arquivo = arq
+
+        self.mensagem = mensagem
+        self.arq
+
+        self.mensagem = mensagem
+      
+
+        self.mensagem = mensagem
+
+        self.mensagem =
+
+        self.m
+
+     
+    @abstractmethod
+    
+    de
+def enviar(self, destinatario):
+        
+     
+pass
+
+# Classes específicas para cada tipo de mensagem
+class MensagemTexto(Mensagem):
+    def _init_(self, mensagem, data_envio):
+        
+        su
+
+  
+super()._init_(mensagem, None, None)
+        self.data_envio = data_envio
+
+    
+        self.data_envio = data_envio
+
+ 
+
+        self.data_envio = data_en
+
+        self.data_envio = da
+
+        self.data_envio
+
+        self.data
+
+        sel
+
+     
+def enviar(self, destinatario):
+        
+        pri
+
+     
+print(f"Enviando mensagem de texto para {destinatario}: {self.mensagem} em {self.data_envio}")
+
+
+
+cl
+class MensagemVideo(Mensagem):
+    
+   
+def _init_(self, mensagem, arquivo, formato, duracao):
+        
+        supe
+
+   
+super()._init_(mensagem, arquivo, formato)
+        self.duracao = duracao
+
+    
+        self.duracao = duracao
+
+  
+
+        self.duracao = dur
+
+        self.duraca
+
+        sel
+
+   
+def enviar(self, destinatario):
+        
+        p
+
+  
+print(f"Enviando vídeo para {destinatario}: {self.mensagem} ({self.duracao} segundos)")
+
+
+
+cla
+class MensagemFoto(Mensagem):
+    def enviar(self, destinatario):
+        
+        p
+print(f"Enviando foto para {destinatario}: {self.mensagem}")
+
+
+
+c
+class MensagemArquivo(Mensagem):
+    def enviar(self, destinatario):
+        
+        pr
+print(f"Enviando arquivo para {destinatario}: {self.mensagem}")
+
+# Classes para representar canais de comunicação
+
+clas
+class CanalWhatsAppTelegram:
+    def enviar_mensagem(self, mensagem, destinatario):
+        mensagem.enviar(destinatario)
+
+
+        mensagem.enviar(destinatario
+
+        mensagem.enviar(d
+
+        mensag
+
+    
+class CanalFacebookInstagram:
+    
+    d
+def enviar_mensagem(self, mensagem, destinatario):
+        mensagem.enviar(destinatario)
+
+
+        mensagem.enviar(destinatario
+
+        mensagem.enviar(desti
+
+        mensagem.envia
+
+        mensage
+
+        
+
+ 
+# Exemplo de uso
+mensagem_texto = MensagemTexto(
+mensagem_texto = MensagemTe
+
+mensagem_texto = Mens
+
+mensagem_texto =
+
+mensagem_te
+
+mensa
+"Olá, como vai?", "2023-11-29")
+mensagem_video = MensagemVideo(
+mensagem_video = MensagemVideo(
+
+mensagem_video = MensagemVi
+
+mensagem_video = Mensa
+
+mensagem_video = 
+
+mensagem_vid
+
+mensage
+
+me
+"Vídeo engraçado", "video.mp4", "mp4", 30)
+mensagem_foto = MensagemFoto(
+mensagem_foto = MensagemFoto(
+
+mensagem_foto = Mensage
+
+mensagem_foto = Me
+
+mensagem_foto
+
+mensagem
+
+men
+"Imagem bonita", "foto.jpg", "jpg")
+mensagem_arquivo = MensagemArquivo(
+mensagem_arquivo = MensagemArqu
+
+mensagem_arquivo = Mens
+
+mensagem_arquiv
+
+mensage
+"Documento importante", "documento.pdf", "pdf")
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsapp_telegram.enviar_mensagem(mensagem_texto, 
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsapp_telegram.enviar_mensagem(mensagem_t
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsapp_telegram.enviar_mensagem(m
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsapp_telegram.enviar_m
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsapp_telegram
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+canal_whatsap
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagram()
+
+can
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFacebookInstagra
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = CanalFaceboo
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebook_instagram = Can
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+canal_facebo
+
+
+canal_whatsapp_telegram = CanalWhatsAppTelegram()
+can
+
+
+canal_whatsapp_telegram = CanalWhatsAppTeleg
+
+
+canal_whatsapp_telegram = CanalWhat
+
+
+canal_whatsapp_telegram = C
+
+
+canal_whatsapp_tele
+
+
+canal_whatsa
+
+
+cana
+"+55123456789")
+canal_facebook_instagram.enviar_mensagem(mensagem_video, 
+canal_facebook_instagram.enviar_mensagem(mensagem_vid
+
+canal_facebook_instagram.enviar_mensagem(mensag
+
+canal_facebook_instagram.enviar_mensagem(
+
+canal_facebook_instagram.enviar_men
+
+canal_facebook_instagram.envi
+
+canal_facebook_instagra
+
+canal_facebook_in
+
+canal_face
+
+can
+"@usuario_instagram")
+canal_whatsapp_telegram.enviar_mensagem(mensagem_foto, 
+canal_whatsapp_telegram.enviar_mensagem(mensagem_f
+
+canal_whatsapp_telegram.enviar_mensagem(men
+
+canal_whatsapp_telegram.enviar_mens
+
+canal_whatsapp_telegram.env
+
+canal_whatsapp_telegr
+
+canal_whatsapp_
+
+canal_wha
+
+ca
+"+55123456789")
+canal_facebook_instagram.enviar_mensagem(mensagem_arquivo, 
+canal_facebook_instagram.enviar_mensagem(mensagem_arquivo,
+
+canal_facebook_instagram.enviar_mensagem(mensagem_
+
+canal_facebook_instagram.enviar_mensagem(me
+
+canal_facebook_instagram.enviar_mens
+
+canal_facebook_instagram.envi
+
+canal_facebook_instagr
+
+canal_facebook_
+
+canal_fa
+
+c
+"@usuario_facebook")
